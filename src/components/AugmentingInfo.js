@@ -1,5 +1,5 @@
 import { sanitizeUrl } from '../helpers/helpers'
-
+import React from 'react'
 
 const EyeSVG = () =>
   <svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -121,7 +121,7 @@ export default class Info extends React.Component {
             <h2 className="title" >{ title }
               { version && <VersionStamp version={version}></VersionStamp> }
             </h2>
-            <ViewSpec></ViewSpec>
+        
           </div>
           { host || basePath ? <Path host={ host } basePath={ basePath } /> : null }
           { url && <a target="_blank" href={ sanitizeUrl(url) }><span className="url"> { url } </span></a> }
