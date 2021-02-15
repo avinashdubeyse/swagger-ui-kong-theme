@@ -285,10 +285,31 @@
   fill: rgb(0, 149, 255);
 }
 
-.swagger-ui .register-wrapper button {
+.swagger-ui .subscribe-wrapper button {
   background-color: rgb(0, 149, 255);
-  color: white;
-  border-color: rgb(0, 149, 255);
+    color: white;
+    border-color: rgb(0, 149, 255);
+    padding: 5px 23px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .3s;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+   
+}
+
+
+.subscribe-wrapper
+{
+    display: flex;
+    flex: 8;
+    justify-content: flex-end;
+
+    .subscribe
+    {
+        padding-right: 40px;
+        margin-right: 10px;
+    }
 }
 
 .swagger-ui .main-container {
@@ -1065,3 +1086,5 @@
  .swagger-ui .opblock-body .right-side-wrapper pre span.token.bold,.swagger-ui .opblock-body .right-side-wrapper pre span.token.important{font-weight:700 !important}
  .swagger-ui .opblock-body .right-side-wrapper pre span.token.italic{font-style:italic !important}
  .swagger-ui .opblock-body .right-side-wrapper pre span.token.entity{cursor:help !important}
+
+

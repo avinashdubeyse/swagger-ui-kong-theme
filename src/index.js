@@ -4,6 +4,7 @@ import KongLayout from './components/Layout'
 import AugmentingInfo from './components/AugmentingInfo.js'
 import AugmentingResponses from './components/AugmentingResponses'
 import AugmentingOperation from './components/AugmentingOperation.js'
+import SubscribeBtn from './components/SubscribeBtn.js'
 import Sidebar from './components/Sidebar'
 import SidebarList from './components/SidebarList'
 
@@ -14,7 +15,8 @@ const SwaggerUIKongTheme = (system) => {
       curl: () => null,
       KongLayout: KongLayout,
       Sidebar: Sidebar,
-      SidebarList: SidebarList
+      SidebarList: SidebarList,
+      SubscribeBtn:SubscribeBtn,
     },
     wrapComponents: {
       responses: (Original, system) => (props) => {

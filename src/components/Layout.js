@@ -42,6 +42,7 @@ export default class KongLayout extends React.Component {
     const ServersContainer = getComponent("ServersContainer", true)
     const SchemesContainer = getComponent("SchemesContainer", true)
     const AuthorizeBtnContainer = getComponent("AuthorizeBtnContainer", true)
+    const SubscribeBtn = getComponent("SubscribeBtn", true)
     const Sidebar = getComponent("Sidebar", true)
 
 
@@ -119,8 +120,9 @@ export default class KongLayout extends React.Component {
                 {hasServers ? (<ServersContainer />) : null}
                 {hasSchemes ? (<SchemesContainer />) : null}
                 <div className="actions">
+                <SubscribeBtn />
                   {hasSecurityDefinitions ? (<AuthorizeBtnContainer />) : null}
-                  {hasRegistration ? (<RegisterBtnContainer />) : null}
+                 
                 </div>
               </Col>
             </div>

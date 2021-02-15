@@ -55,10 +55,8 @@ class Configerator extends React.Component {
   render() {
     return (
       <div>
-        <h1>Welcome to the Swagger UI Kong Theme demo</h1>
-        <p>From here you can try different spec files and configurations.</p>
-
-        <textarea className='config-editor' type="text" value={this.state.config} onChange={this.handleChangeConfig}>
+       
+        <textarea  type="text" value={this.state.config} onChange={this.handleChangeConfig}>
 
         </textarea>
 
