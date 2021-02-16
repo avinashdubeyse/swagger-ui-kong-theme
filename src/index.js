@@ -15,8 +15,7 @@ const SwaggerUIKongTheme = (system) => {
       curl: () => null,
       KongLayout: KongLayout,
       Sidebar: Sidebar,
-      SidebarList: SidebarList,
-      SubscribeBtn:SubscribeBtn,
+      SidebarList: SidebarList
     },
     wrapComponents: {
       responses: (Original, system) => (props) => {
